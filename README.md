@@ -1,7 +1,6 @@
 ## Note - This repo is still WIP
 
-# Rakuten France Multimodal Product Data Classification
-## by Rakuten Institute of Technology, Paris
+# Rakuten France Multimodal Product Data Classification ### by Rakuten Institute of Technology, Paris
 
 I took part in the Rakuten Data Challange and solved the various components for the multimodal product classification. 
 As a part of the challangae, I have:
