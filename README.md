@@ -20,22 +20,43 @@ The model has 134 million trainable paramters.
 
 In order to avoid overfitting, I applied early stopping on validation accuacy. 
 
-Model hyperparameters
+**Model hyperparameters**
 • The model has steps per epoch equal to 100 i.e. the total
 number of steps (batches of samples) before declaring one
-epoch finished and starting the next epoch.
+epoch finished and starting the next epoch.  
 • For the early stopping the patience is 20 epochs, with
-monitor on validation accuracy.
+monitor on validation accuracy.  
 • Total number of steps (batches of samples) to validate
-before stopping i.e. the validation steps are set to 100
-• Total number of epochs is 50.
+before stopping i.e. the validation steps are set to 100  
+• Total number of epochs is 50.  
 
 ## 2. Built a Neural Network for doing multiclass classification using text data
   
+Text mining is the process of automatically extracting "high
+quality" information from text. High-quality information is
+typically derived by transforming the free (unstructured) text in
+documents and databases into normalized, structured data suitable
+for analysis or to drive machine learning (ML).
+
+Here, I converted the text field into a TF-IDF matrix after doing proper text pre-processing using SpaCy.  
+TF-IDF is intended to reflect how
+relevant a term is in a given document. The intuition behind it is
+that if a word occurs multiple times in a document, we should boost
+its relevance as it should be more meaningful than other words that
+appear fewer times (TF). At the same time, if a word occurs many
+times in a document but also along many other documents, maybe
+it is because this word is just a frequent word; not because it was
+relevant or meaningful (IDF).  
+
+This TF- IDF matrix was used as an input in a Neural Network with custom  achitecture and 16 million trainable parameters. 
 
 ## 3. Compared various Ensemble Learning Techniques on the TF - IDF matrix obtained from the text data
   
+The TF- IDF marix obtained above was used a input of various ensemble learning models viz. XGBoost, AdaBoost, Random Forest, Gradient Boost etc.  
 
-Note - Due to the NDA signed during the competition can not upload the data files here. 
+This gave me an opportunity to do a comparitive study of various Ensemble Learning models and also apply the knowledge gained during the ensemble learning course I followed. 
+
+Note - Due to the NDA signed during the competition can not upload the data files here.  
+
 More details about the data challange can be found here:
 https://challengedata.ens.fr/participants/challenges/35/
