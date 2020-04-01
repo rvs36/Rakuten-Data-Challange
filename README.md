@@ -54,6 +54,8 @@ This TF- IDF matrix was used as an input in a Neural Network with custom  achite
   
 The TF- IDF marix obtained above was used a input of various ensemble learning models viz. XGBoost, AdaBoost, Random Forest, Gradient Boost etc.  
 
+I used SK learn's random search to find the best hyper parameters for the models.  
+
 This gave me an opportunity to do a comparitive study of various Ensemble Learning models and also apply the knowledge gained during the ensemble learning course I followed. 
 
 Note - Due to the NDA signed during the competition can not upload the data files here.  
